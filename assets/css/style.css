@@ -117,7 +117,6 @@ body {
     top: 5%;
     padding: 0;
     border-radius: 50%;
-	transform: scale(1.5);
 }
 /*END IMPORTED*/
 
@@ -228,6 +227,12 @@ body {
 	overflow: hidden;
 	position: relative;
 	padding: 0px;
+/*
+	background-image: url("../images/slide-1.jpg");
+	background-size: cover;
+    background-position: center;
+    background-attachment: fixed !important;
+*/
 }
 
 #slider-text {
@@ -313,10 +318,9 @@ body {
 	  list-style-type: none;
 	}
 
-	/** SLIDESHOW **/
 	.slideshow,
 	.slideshow:after { 
-		top: -16px; /*Not sure why I needed this fix*/
+		top: -16px;
 		position: relative;
 		width: 100%;
 		height: 100%;
@@ -387,6 +391,9 @@ body {
 		opacity: 1;
 	}
 
+
+
+
 /*2.2-About*/
 #about {
 	margin-top: 5vh;
@@ -455,7 +462,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
-	margin-top: 10vh;
+	margin-top: 2vh;
 }
 
 #project-carousel {
@@ -466,6 +473,8 @@ body {
 	position: absolute;
 	top: 78%;
 	left: 15%;
+	z-index: 5001;
+	color: #873A2E;
 }
 
 #project-carousel h2 {
@@ -474,14 +483,16 @@ body {
 	left: 15%;
 	font-size: 2vh;
 	font-family: 'Poppins', sans-serif;
+	z-index: 5001;
 }
 
 #project-carousel button {
 	position: absolute;
-	top: 78%;
+	top: 77%;
 	left: 77%;
 	padding-left: 2vh;
 	padding-right: 2vh;
+	z-index: 5001;
 }
 
 #project-carousel button:hover {
@@ -492,9 +503,20 @@ body {
 	color: white;
 }
 
+.project-slide-textbg {
+	background: white;
+	width: 80%;
+	height: 12%;
+	z-index: 5000;
+	position: absolute;
+	bottom: 15%;
+	opacity: 0.5;
+}
+
+
 /*2.7-Contact*/
 #contact {
-	margin-top: 10vh;
+	margin-top: 20vh;
 }
 #contact i {
 	font-size: 5vh;
