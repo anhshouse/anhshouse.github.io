@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,455 +8,399 @@
 	<meta name="keywords" content="blog, business card, creative, creative portfolio, cv theme, online resume, personal, portfolio, professional cv, responsive portfolio, resume, resume theme, vcard" />
 	<meta name="author" content="Anh Nguyen" />
 	<meta name="theme-color" content="#2a2d35">
+	
+	<link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css"/>
+	<link rel="stylesheet" href="assets/css/LineIcons.min.css" type="text/css"/>
+	
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" type="text/css">
+	
+	
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alex+Brush&family=Poppins&family=Roboto+Mono&display=swap" rel="stylesheet">
 
-	<!-- Vendor Css-->
-	<link rel="stylesheet" href="assets/css/bootstrap.css" />
-	<link rel="stylesheet" href="assets/css/LineIcons.min.css" />
-	<link rel="stylesheet" href="assets/css/swiper.css" />
-
-	<!-- Template style Css -->
-	<link href="assets/css/anhshouse.css" rel="stylesheet">
-
+	
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
-
-	<!-- START: Preloader -->
-	<div id="preloader" class="preloader">
-		<div class="spinner-grow text-dark" role="status">
-			<span class="sr-only">Loading...</span>
-		</div>
+	
+<!--	SIDE MENU-->
+	
+	<div class="navbar-toggler" id="navbar-toggler">
+		<svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="40">
+		  <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+		  <path class="line middle" d="m 30,50 h 40" />
+		  <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+		</svg>
 	</div>
-	<!-- END: Preloader -->
-
-	<!-- START: Aside -->
-	<aside class="aside">
-		<!-- START: NAVBAR -->
-
-		<div class="nav-wrapper">
-
-			<div class="navbar-toggler">
-				<svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="40">
-				  <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
-				  <path class="line middle" d="m 30,50 h 40" />
-				  <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
-				</svg>
+	
+	<div class="menu-wrapper menu-hidden" id="side-menu">
+			<div class="row d-flex justify-content-center" id="avatar">
+				<div class="col-7">
+					<a href="index.html">
+						<img src="assets/images/about.jpg" alt="avatar" class="img-fluid mx-auto d-block shadow-sm round-cirle">
+					</a>
+				</div>
 			</div>
-
-			<nav class="navbar text-center align-items-center justify-content-center">
-
-
-
-                <div class="collapse navbar-collapse show" id="navbarCollapse">
-                	<div class="about-avatar mb-5">
-                		<a href="index.html">
-							<img id="nav-avatar" src="assets/images/about.jpg" alt="" class="img-fluid mx-auto d-block shadow-sm rounded-full">
-						</a>
-
-						<div class="about-avatar-details mt-4">
-							<h2>anh nguyen<br>(andy)</h2>
-						</div>
-
-					</div>
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link text-underline" href="index.html"><i class="lni lni lni-home"></i>Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-underline" href="#about"><i class="lni lni-briefcase"></i>about</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-underline" href="#testimony"><i class="lni lni-graduation"></i>My works</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-underline" href="#services"><i class="lni lni-offer"></i>Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-underline" href="#contact"><i class="lni lni-phone"></i>Contact</a>
-                        </li>
-                    </ul>
-                </div>
-
-               	<div class="aside-footer">
-                	<ul class="list-unstyled list-inline">
-                        <li class="list-inline-item"><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="lni lni-skype"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="lni lni-youtube"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
-                    </ul>
-                </div>
-	        </nav>
-        </div>
-        <!-- END: NAVBAR -->
-    </aside>
-    <!-- START: Aside -->
-
-    <div class="page-wrapper">
-
-		<!-- START: HOME -->		
-    	<section class="section-home " id="home">
-    		<h1 class="glass"><strong>let's <br> design!</strong></h1>
+			<div class="row d-flex justify-content-center" id="name">
+				<span class="text-center abril">ANH NGUYEN</span>
+			</div>
+			<nav class="navbar row d-flex justify-content-center" id="menu-nav">
+				<div class="col-10">
+				<ul class="navbar-nav flex-column">
+					<li class="nav-item">
+						<a class="nav-link active" href="#top-slider"><i class="lni lni-home"></i>  Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about"><i class="lni lni-user"></i>  About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#services"><i class="lni lni-briefcase"></i> Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact"><i class="lni lni-phone"></i> Contact</a>
+					</li>
+				</ul>
+				</div>
+			</nav>
 			
-			<div class="container">
-				<a id="home-button" class="btn btn-outline-light" role="button" href="#about">about me</a>
+			<div class="row d-flex justify-content-center" id="side-logo">
+				<div class="col-8"><a href="index.html"><img class="img-fluid" alt="logo" src="assets/images/logo.png"></a></div>
 			</div>
-    	</section>	
-    	<!-- END: HOME -->
 		
-		
-		<!-- START: ABOUT -->
-		<section class="section section-about" id="about">
-			<div class="container">
-				<div class="section-head">
-					<span>Get to know</span>
-					<h2>About Me</h2>
-				</div>
-
-				<div class="row justify-content-center align-items-center">
-					<div class="col-md-5">
-						<img class="about-img img-fluid wow-none fadeInUp" data-wow-none-duration="1s" src="assets/images/avatar.jpg" alt="About Picture">
-					</div>
-					<div class="col-md-7">
-						<div class="about-desc wow-none fadeInUp" data-wow-none-duration="1s"  data-wow-none-delay="500ms">
-							<div class="about-desc-content">
-								<h1 class="font-weight-light mb-5">The Anh Nguyen</h1>
-								<p class="font-weight-light my-3">Originally an engineer of environment. I worked as a sustainability specialist for 6 years before deciding to pursue my new & current career as a desginer. I'm currently enrolling in Multimedia Diploma Course of Arena Center to strengthen my background in designing.</p>
-								<p class="font-weight-light my-3">Because of my origin background, I focus mostly on practical designing. I love minimalism & that is reflected in most of my work. However, I always strive to satisfy my partners & customers' needs by adjusting according to requests.</p>
-							</div>
-
-							<div class="about-desc-more text-left mt-5">
-								<div class="row">
-									<div class="col-md-6">
-										<div class="about-desc-info">
-											<b>Age : </b>
-											<span>29</span>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="about-desc-info">
-											<b>Location : </b>
-											<span>Ho Chi Minh, VN</span>
-										</div>
-									</div>
-									
-									<div class="col-md-6">
-										<div class="about-desc-info">
-											<b>Phone : </b>
-											<a class="text-underline" href="tel:84936387958">+84 936-387-958</a>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="about-desc-info">
-											<b>Email :</b>
-											<a class="text-underline" href="mailto:theanhnguyen.mt@gmail.com">theanhnguyen.mt@gmail.com</a>
-										</div>
-									</div>
-									
-								</div>
-							</div>
-						</div>
-					</div>
-
+			<div class="row d-flex justify-content-center" id="menu-foot">
+				<div class="col-10">
+				<ul id="social-icon" class="d-flex justify-content-center">
+					<li class="list-inline-item"><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+					<li class="list-inline-item"><a href="#"><i class="lni lni-instagram-filled"></i></a></li>
+					<li class="list-inline-item"><a href="#"><i class="lni lni-twitter-original"></i></a></li>
+					<li class="list-inline-item"><a href="#"><i class="lni lni-youtube"></i></a></li>
+				</ul>
 				</div>
 			</div>
-
+	
+	</div>
+<!--	END SIDE MENU-->
+	
+<!--	START - MAIN PAGE-->
+	<div class="wrapper">
+		
+<!--		SLIDER-->
+		<div class="container-fluid d-flex justify-content-center" id="top-slider">
+			<ul class="slideshow">
+				<li><span></span></li>
+				<li><span></span></li>
+				<li><span></span></li>
+				<li><span></span></li>
+				<li><span></span></li>
+			</ul>
 			
-		</section>
-		<!-- END: ABOUT -->
+			<span class="slider-text text-uppercase text-center" id="slider-text">be.<br> imaginative.</span>
+			
+			<a id="home-button" class="btn btn-outline-light text-uppercase outline" role="button" href="#about">about me</a>
+			
+			<div id="logo-png"><a href="index.html"><img src="assets/images/logo.png" alt="logo"></a></div>
+		</div>
 		
-<!--		START: SKILLS-->
-		<section class="section section-dark section-skills pt-4">
-			<div class="container">
-				<div class="section-head ">
-					<span>ABILITIES</span>
-					<h2>My Skills</h2>
-				</div>
-
-				<div class="section-skills-wrap">
-					<div class="row">
-						<div class="col-md-6">
-							<p>I can handle a wide range of workflow, including taking pictures, retouching to making print ad, video making & web designing.</p>
-							<p>I'm familiar with using Adobe software pack, including: Illustrator, Photoshop, InDesign, Premiere Pro, Dreamweaver.</p>
-							<p>With my wide range of skills, I will be able to communicate effectively in big project & can provide a total package for small projects.</p>
-						</div>
-
-						<div class="col-md-6">
-							<div class="resume-panel">
-								<div class="mb-4 wow-none fadeInUp"  data-wow-none-duration="1.5s">
-									<p>Photography</p>
-									<div class="progress mt-2">
-										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-
-								<div class="mb-4 wow-none fadeInUp"  data-wow-none-duration="1.5s" data-wow-none-delay=".2s">
-									<p>Graphic Design</p>
-									<div class="progress mt-2">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-
-								<div class="mb-4 wow-none fadeInUp"  data-wow-none-duration="1.5s" data-wow-none-delay=".3s">
-									<p>Video Editing</p>
-									<div class="progress mt-2">
-										<div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-
-								<div class="mb-0 wow-none fadeInUp"  data-wow-none-duration="1.5s" data-wow-none-delay=".4s">
-									<p>Web Design</p>
-									<div class="progress mt-2">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-
-							</div>
-						</div>	
+		<nav class="navbar" id="menu">
+			<ul class="navbar-nav">
+				<div class="row d-flex justify-content-center">
+					<div class="col-1">
+						<li class="nav-item text-center">
+						<a href="#top-slider" class="nav-link active"><i class="lni lni-home"></i> HOME</a>
+						</li>
+					</div>
+					<div class="col-1">
+						<li class="nav-item text-center">
+						<a href="#about" class="nav-link"><i class="lni lni-user"></i>  ABOUT</a>
+						</li>
+					</div>
+					<div class="col-1">
+						<li class="nav-item text-center">
+						<a href="#services" class="nav-link"><i class="lni lni-briefcase"></i> SERVICES</a>
+						</li>
+					</div>
+					<div class="col-1">
+						<li class="nav-item text-center">
+						<a href="#contact" class="nav-link"><i class="lni lni-phone"></i> CONTACT</a>
+						</li>
 					</div>
 				</div>
-			</div>
-
-		</section>
-<!--		END: SKILLS-->
+				
+			</ul>
+		</nav>
 		
-		<!-- START: SLIDER -->
-		<section class="section section-dark section-testimony pt-4" id="testimony">
-			<div class="container">
-				<div class="section-head text-left">
-					<span>My works</span>
-					<h2>photography</h2>
-				</div>
-				<div class="row">
-					<div class="col-lg-12">
-						<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-							<ol class="carousel-indicators">
-								<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-							</ol>
-							<div class="carousel-inner">
-								<div class="carousel-item active">
-									<div class="slide-img" id="slide-1"></div>
-									<div class="carousel-caption d-none d-md-block">
-										<h2 class="mb-0 font-weight-bold text-uppercase">Flatlay</h2>
-										<h3 class="mb-0">Mid Autumn Festival</h3>
-									</div>
+<!--		ABOUT-->
+		<div class="container" id="about">
+			<div class="row mb-4 justify-content-center">
+				<span class="title-text">- get to. <span style="color: #873A2E">KNOW.</span> -</span>
+			</div>
+			<div class="row justify-content-center align-items-center mt-5" id="decscription">
+				<div class="col-5"> <img class="img-fluid" src="assets/images/avatar.jpg" alt="About Picture" style="border-radius: 10%"> </div>
+				<div class="col-5">
+					<div class="description">
+						<div class="description-1">
+							<h1 class="mb-4" style="font-family: 'Abril Fatface', cursive;">THE ANH NG.</h1>
+							<p class="font-weight-light my-3">Originally an engineer of environment. I worked as a sustainability specialist for 6 years before deciding to pursue my new & current career as a desginer. I'm currently enrolling in Multimedia Diploma Course of Arena Center to strengthen my background in designing.</p>
+							<p class="font-weight-light my-3">Because of my origin background, I focus mostly on practical designing. I love minimalism & that is reflected in most of my work. However, I always strive to satisfy my partners & customers' needs by adjusting according to requests.</p>
+						</div>
+						<div class="description-2 text-left mt-5">
+							<div class="row">
+								<div class="col-6 mb-3">
+									<div class=""> <b>Age : </b> <span>29</span> </div>
 								</div>
-								<div class="carousel-item">
-									<div class="slide-img" id="slide-2"></div>
-									<div class="carousel-caption d-none d-md-block">
-										<h2 class="mb-0 font-weight-bold text-uppercase">product advertising</h2>
-										<h3 class="mb-0">Puzzleat Eating Bags</h3>
-									</div>
+								<div class="col-6">
+									<div class=""> <b>Location : </b> <span>Ho Chi Minh, VN</span> </div>
 								</div>
-								<div class="carousel-item">
-									<div class="slide-img" id="slide-3"></div>
-									<div class="carousel-caption d-none d-md-block">
-										<h2 class="mb-0 font-weight-bold text-uppercase">studio portrait</h2>
-										<h3 class="mb-0">BFF</h3>
-									</div>
+								<div class="col-6">
+									<div class=""> <b>Phone : </b> <a class="text-underline" href="tel:84936387958">+84 936-387-958</a> </div>
 								</div>
-								<div class="carousel-item">
-									<div class="slide-img" id="slide-4"></div>
-									<div class="carousel-caption d-none d-md-block">
-										<h2 class="mb-0 font-weight-bold text-uppercase">outdoor</h2>
-										<h3 class="mb-0">Night Street</h3>
+								<div class="col-6">
+									<div class=""> <b>Email :</b>
+										<a class="text-underline" href="mailto:theanhnguyen.mt@gmail.com">theanhnguyen.mt@gmail.com</a>
 									</div>
 								</div>
 							</div>
-							<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="sr-only">Previous</span>
-							</a>
-							<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="sr-only">Next</span>
-							</a>
 						</div>
 					</div>
-					
 				</div>
 			</div>
-		</section>
-		<!-- END: SLIDER -->
+		</div>
+<!--		END ABOUT-->
 		
-		<!-- START: PRICING -->
-		<section class="section section-dark section-pricing pt-0" id="services">
-			<div class="container">
-				<div class="section-head">
-					<span>WHAT I DO</span>
-					<h2>My Services</h2>
-				</div>
-
-				<div class="row mt-5 py-5">
-                    <div class="col-md-4 wow-none fadeInUp" data-wow-none-duration="1.5s" data-wow-none-delay=".3s">
-                        <div class="price-box b-box">
-                        	<div class="price-box-head p-4">
-                        	  <h6 class="badge">Small project</h6>
-                        	  <div class="bold price-price">
-	                                <sup>$</sup>
-	                                <span>29</span>
-	                            </div>
-                          </div>
-                            <hr>
-                            <ul class="price-features">
-                                <li>Community Support</li>
-                                <li>200+ Pages</li>
-                                <li>10 Header variations</li>
-                                <li>24/7 Free Support</li>
-                                <li><i class="fas fa-times"></i></li>
-                                <li><i class="fas fa-times"></i></li>
-                            </ul>
-                            <hr>
-                            <div class="text-center p-3">
-                            	<button class="btn btn-small shadow-none">Start</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 wow-none fadeInUp" data-wow-none-duration="1.5s" data-wow-none-delay=".5s">
-                        <div class="price-box b-box featured">
-                            <div class="price-box-head p-4">
-                              <h6 class="badge">branding package</h6>
-                              <div class="bold price-price">
-	                                <sup>$</sup>
-	                                <span>399</span>
-	                            </div>
-                          </div>
-                            <hr>
-                            <ul class="price-features">
-                                <li>Community Support</li>
-                                <li>200+ Pages</li>
-                                <li>10 Header variations</li>
-                                <li>24/7 Free Support</li>
-                                <li>Priority Support</li>
-                                <li>20+ home page options</li>
-                            </ul>
-                            <hr>
-                            <div class="text-center p-3">
-                            	<button class="btn btn-small shadow-none">Start</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 wow-none fadeInUp" data-wow-none-duration="1.5s" data-wow-none-delay=".7s">
-                        <div class="price-box b-box">
-                            <div class="price-box-head p-4">
-                              <h6 class="badge">Website making</h6>
-                              <div class="bold price-price">
-	                                <sup>$</sup>
-	                                <span>299</span>
-	                            </div>
-                          </div>
-                            <hr>
-                            <ul class="price-features">
-                                <li>Community Support</li>
-                                <li>200+ Pages</li>
-                                <li>10 Header variations</li>
-                                <li>24/7 Free Support</li>
-                                <li><i class="fas fa-times"></i></li>
-                                <li><i class="fas fa-times"></i></li>
-                            </ul>
-                            <hr>
-                            <div class="text-center p-3">
-                            	<button class="btn btn-small shadow-none">Start</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-		</section>
-		<!-- END: PRICING -->
-
-		<!-- START: CONTACT -->
-		<section class="section section-light section-contact" id="contact">
-			<div class="container">
-				<div class="section-head text-left">
-					<span>wanna say Hello?</span>
-				</div>
-
+<!--		PARALLAX-->
+		<div class="container-fluid" id="parallax-1">
+			<span id="parallax-text-1" class="text-center abril">good <span class="red-logo">DESIGN</span>. means. good <span class="red-logo">BUSINESS</span></span>
+			<div id="parallax-text-bg"></div>
+		</div>
+<!--		END PARALLAX-->
+		
+<!--			SKILLS-->
+		<div class="container" id="skills">
+			<div class="row mt-5 mb-5 justify-content-end">
+				<div class="col-12 d-flex justify-content-center"><span class="title-text">- my. <span class="red-logo">SKILLS</span> -</span></div>
 			</div>
+			<div class="skills">
+				<div class="row justify-content-center">
+					<div class="col-4 d-flex align-items-center">
+						<div><p>I can handle a wide range of workflow, including taking pictures, retouching to making print ad, video making & web designing.</p>
+						<p>I'm familiar with using Adobe software pack, including: Illustrator, Photoshop, InDesign, Premiere Pro, Dreamweaver.</p>
+						<p>With my wide range of skills, I will be able to communicate effectively in big project & can provide a total package for small projects.</p>
+						</div>
+					</div>
 
-			<div class="contact-Otherdetails section-dark">
+					<div class="col-4">
+						<div class="resume-panel">
+							<div class="mb-3">
+								<p>Photography</p>
+								<div class="progress mt-0">
+									<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+
+							<div class="mb-3">
+								<p>Graphic Design</p>
+								<div class="progress mt-0">
+									<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+
+							<div class="mb-3">
+								<p>Video Editing</p>
+								<div class="progress mt-0">
+									<div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+
+							<div class="mb-3">
+								<p>Web Design</p>
+								<div class="progress mt-0">
+									<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+<!--			END SKILLS-->
+		
+<!--		SERVICES-->
+		<div class="container-fluid" id="services">
+			<div class="row justify-content-center">
+				<img src="assets/images/logo-badge.png" alt="logo-badge">
+			</div>
+			<div class="d-flex justify-content-center">
+				<span class="title-text">my. <span class="red-logo">SERVICES</span></span>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-4">
+					<h3 class="text-center">Clients come first.<br><br>A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take out.</h3>
+				</div>
+			</div>
+			<div class="services-item row justify-content-center">
+				<div class="col-3 text-center">
+					<img alt="services-G" src="assets/images/services-G.png">
+					<h2>Graphic & Branding</h2>
+					<div class="row justify-content-center">
+						<div class="col-8">
+							<p>Build & activate brands through cultural insight, strategic vision, and the power of emotion.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 text-center">
+					<img alt="services-W" src="assets/images/services-W.png">
+					<h2>Web Design</h2>
+					<div class="row justify-content-center">
+						<div class="col-8">
+							<p>Reach our client better through websites & mobile app. Boots converasion rate for your business faster.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 text-center">
+					<img alt="services-A" src="assets/images/services-A.png">
+					<h2>Animation</h2>
+					<div class="row justify-content-center">
+						<div class="col-8">
+							<p>Impressive and communicate with your clients better through animations & motion videos.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!--		END SERVICES-->
+		
+<!--		PROJECTS-->
+		<div class="container-fluid" id="projects">
+			<div class="d-flex justify-content-center">
+				<span class="title-text">my. <span class="red-logo">PROJECTS</span></span>
+			</div>
+		</div>
+		
+		<div class="owl-carousel" id="project-carousel">
+			<div class="project-slide">
+				<h1>PUZZLEAT - SMART BAG</h1>
+				<h2>BRANDING</h2>
+				<button class="btn btn-danger"><a href="#">SEE PROJECT <i class="lni lni-chevron-right"></i></a></button>
+				<img alt="project 1" src="assets/images/project-1.jpg">
+			</div>
+			<div class="project-slide">
+				<h1>YOUNG TRAVELLER</h1>
+				<h2>MAGAZINE LAYOUT</h2>
+				<button class="btn btn-danger"><a href="#">SEE PROJECT <i class="lni lni-chevron-right"></i></a></button>
+				<img alt="project 2" src="assets/images/project-2.jpg">
+			</div>
+			<div class="project-slide">
+				<h1>CREATIVE PORTFOLIO</h1>
+				<h2>WEBSITE</h2>
+				<button class="btn btn-danger"><a href="#">SEE PROJECT <i class="lni lni-chevron-right"></i></a></button>
+				<img alt="project 3" src="assets/images/slide-3.jpg">
+			</div>
+		</div>
+<!--		END PROJECTS-->
+		
+<!--		CONTACT-->
+		<div class="container-fluid" id="contact">
+			<div class="d-flex justify-content-center">
+				<span class="title-text">my. <span class="red-logo">CONTACTS</span></span>
+			</div>
 				<div class="container">
-					<div class="contact-details mt-2">
-						<h5 class="section-subHead pt-0 mb-4"> Contact Me</h5>
-						<div class="row">
-							<div class="col-sm-6 col-lg-6">
-								<div class="contact-details--panel p-4 b-box text-center  wow-none fadeInUp" data-wow-none-duration="1.5s">
+					<div class="mt-2">
+						<div class="row d-flex justify-content-center">
+							<div class="col-4">
+								<div class="p-4 b-box text-center">
 									<div class="mb-3">
 										<i class="lni lni-mobile"></i>
 									</div>
 									<div class="mt-2">
 										<a href="tel:84936387958" class="text-underline">+84 936 387 958</a>
-										<p class="mt-2">Call Us</p>
+										<p class="mt-2">Call Me</p>
 									</div>
 								</div>
 							</div>
-							<div class="col-sm-6 col-lg-6">
-								<div class="contact-details--panel p-4 b-box text-center  wow-none fadeInUp" data-wow-none-duration="1.5s" data-wow-none-delay=".2s">
+							<div class="col-4">
+								<div class="p-4 b-box text-center">
 									<div class="mb-3">
 										<i class="lni lni-envelope"></i>
 									</div>
 									<div class="mt-2">
 										<a href="mailto:theanhnguyen.mt@gmail.com" class="text-underline">theanhnguyen.mt@gmail.com</a>
-										<p class="mt-2">Email Us</p>
+										<p class="mt-2">Email Me</p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="contact-form mt-5">
+					<div class="mt-5">
 
-						<form method="post" action="php/contact.php" name="contact-form" id="contactForm">
-								<h5 class="section-subHead mb-4"> Ask Me Anything</h5>
-								<div id="formMessage" style="display: none;"><h3>Email Sending</h3></div>
+								<h5 class="mb-2"> Ask Me Anything</h5>
 								<div class="row">
-									<div class="col-lg-6">
+									<div class="col-6">
 										<div class="form-group mt-3">
 											<input name="name" id="name" type="text" class="form-control b-box" placeholder="Your Name *" required>
 										</div>
 									</div>
-									<div class="col-lg-6">
+									<div class="col-6">
 										<div class="form-group mt-3">
 											<input name="email" id="email" type="email" class="form-control b-box" placeholder="Your Email *" required>
 										</div>
 									</div>                                
 								</div>
 								<div class="row">
-									<div class="col-lg-12">
+									<div class="col-12">
 										<div class="form-group mt-3">
 											<input type="text" class="form-control b-box" id="subject" placeholder="Your Subject.." required>
 										</div>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-lg-12">
+									<div class="col-12">
 										<div class="form-group mt-3">
 											<textarea name="comments" id="comments" rows="4" class="form-control b-box" placeholder="Your message..."></textarea>
 										</div>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-lg-12 mt-4 text-center">
-										<input type="submit" id="submit" name="send" class="submitBnt btn btn-outline text-uppercase" value="Submit">
+									<div class="col-12 mt-2 text-center">
+										<input type="submit" id="submit" name="send" class="btn btn-light text-uppercase" value="Submit">
 									</div>
 								</div>
 							</form>
 					</div>
 				</div>
 			</div>
-		</section>
-		<!-- END: CONTACT -->
+<!--		END CONTACT-->
+	
+<!--	FOOTER-->
+	<div class="container-fluid d-flex justify-content-center align-items-center" id="footer"><span>&copy; Anh's House 2020. All Right Reserved. Designed by Anh Nguyen.</span></div>
+<!--	END FOOTER-->
+			
+		
+		
+		
+		
 
 	</div>
-
-
+	
+	
+	
+	
 	<!-- JAVASCRIPTS -->
+	
+	<script src="assets/js/jquery-3.5.1.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.js" type="text/javascript"></script>
+	
+	<script src="assets/js/wow.js"></script>
+    <script>new WOW().init();</script>
+	
+	<script src="assets/js/owl.carousel.min.js" type="text/javascript"></script>
 
-	<script src="assets/js/vendor.js"></script>
-
-
-	<!-- Custom Js -->
-	<script src="assets/js/custom.js"></script>
+	
+	<script src="assets/js/custom.js" type="text/javascript"></script>
+	
+	
 </body>
 </html>

@@ -1,3 +1,13 @@
+// JavaScript Document
+
+$('.owl-carousel').owlCarousel({
+    items:1,
+	margin:10,
+	loop:true,
+	autoplay:true,
+	autoplayTimeout:6000,
+});
+
 ! function($) {
     "use strict";
 
@@ -10,67 +20,27 @@
     });
 
     /* ---------------------------------------------- /*
-    * Section Scroll - Navbar
+    * Navbar toggler
     /* ---------------------------------------------- */
     
 
     $('.navbar-toggler').on('click', function(){
-        $("body").toggleClass('aside-open');
+        $("#side-menu").toggleClass('menu-hidden');
         $(".ham").toggleClass('active');
-        $("body, html").toggleClass('overflow-hidden');
-    });
-
-    /* ---------------------------------------------- /*
-    * Scroll Spy - init
-    /* ---------------------------------------------- */
-
-    $("#navbarCollapse").scrollspy({
-        offset:20
-    });
-
-    /* ---------------------------------------------- /*
-    * Swipper - Init
-    /* ---------------------------------------------- */
-
-    // Testimony init
-
-    var swipertest = new Swiper('.swiper-testimony', {
-        spaceBetween: 30,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-
-
-    /* ---------------------------------------------- /*
-    * Initialize shuffle plugin
-    /* ---------------------------------------------- */
-
-    var $portfolioContainer = $('.list-items-container');
-
-    $('#filter li').on('click', function (e) {
-        e.preventDefault();
-
-        $('#filter li').removeClass('active');
-        $(this).addClass('active');
-
-        var group = $(this).attr('data-group');
-        var groupName = $(this).attr('data-group');
-
-        $portfolioContainer.shuffle('shuffle', groupName );
-    });
-
-    
-    /* ---------------------------------------------- /*
-    * Parallax - Init
-    /* ---------------------------------------------- */
-
-    $(".js-height-full").height($(window).height());
-
-    $(window).resize(function(){
-        $(".js-height-full").height($(window).height());
     });
 
 }(window.jQuery);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
