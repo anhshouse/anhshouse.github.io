@@ -1,0 +1,553 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*RESET CSS*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*HELPER*/
+.poppins {
+	font-family: 'Poppins', sans-serif;
+}
+
+.abril {
+	font-family: 'Abril Fatface', cursive;
+}
+
+.red-logo {
+	color: #873A2E;
+}
+
+.round-border {
+	border-radius: 10%;
+}
+
+.round-cirle {
+	border-radius: 50%;
+}
+
+/*1. GENERAL SETTING*/
+.progress-bar {
+	background: #873A2E;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	font-size: 1.2vh;
+	text-align: justify;
+}
+
+.title-text {
+	font-size: 4vh;
+	font-family: 'Abril Fatface', cursive;
+	border-bottom: 7px double #873A2E;
+	margin-bottom: 3vh;
+}
+
+h1 {
+	font-family: 'Abril Fatface', cursive;
+}
+
+h2 {
+	font-family: 'Abril Fatface', cursive;
+	margin-top: 4vh; 
+}
+
+h3 {
+	font-size: 1.5vh;
+}
+
+p {
+	margin-top: 2vh;
+}
+
+/*SCROLL SPY*/
+
+body {
+	position: relative;
+}
+
+
+/*SIDE MENU*/
+
+/*IMPORTED*/
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+.line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #fff;
+    stroke-width:3.5;
+    stroke-linecap:round;
+}
+.ham1 .top {
+    stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+    stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+    stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+    stroke-dashoffset: -138px;
+}
+
+.navbar-toggler {
+    position: fixed;
+    right: 5%;
+    z-index: 76667;
+    top: 5%;
+    padding: 0;
+    border-radius: 50%;
+}
+/*END IMPORTED*/
+
+.menu-wrapper {
+	position: fixed;
+	width: 15%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-image: url("../images/subtle_carbon.png");
+	z-index: 66666;
+}
+
+.menu-hidden {
+	display: none;
+}
+
+#avatar {
+	margin-top: 10vh;
+	margin-bottom: 2vh;
+}
+
+#name {
+	margin-bottom: 3vh;
+}
+
+#name span {
+	font-size: 2vh;
+}
+
+#menu-nav {
+	margin-top: 2vh;
+}
+
+#menu-nav .nav-item {
+	padding: 0;
+	margin: 0;
+	margin-top: 2vh;
+	text-align: right;
+	border-bottom: 1px solid transparent;
+}
+
+#menu-nav .nav-item:hover {
+	border-bottom: 1px solid #873A2E;
+	transform: scale(1.15);
+}
+
+#menu-nav .nav-item:hover a{
+	color: #873A2E;	
+}
+
+#menu-nav .nav-item a{
+	font-size: 1.7vh;
+	color: white;
+}
+
+#menu-nav .nav-link.active {
+	border-bottom: 1px solid #873A2E;
+	color: #873A2E;
+	transform: scale(1.05);
+}
+
+#side-menu .row {
+	width: 100%;
+}
+
+#menu-foot {
+	position: absolute;
+	bottom: 10vh;
+}
+
+#menu-foot a{
+	font-size: 3vh;
+	color: white;
+}
+
+#social-icon .list-inline-item {
+	margin-left: 2vh;
+}
+
+#social-icon .list-inline-item a:hover i{
+	transform: scale(1.2);
+	color: #873A2E;	
+}
+
+#side-logo {
+	position: absolute;
+	bottom: 18vh;
+	left: 2vh;
+}
+
+
+/*2. MAIN PAGE*/
+/*2.1-Slider*/
+
+.wrapper {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+	background-image: url("../images/subtle_carbon.png");
+	padding: 0px;
+	margin: 0px;
+}
+
+#top-slider {
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	padding: 0px;
+/*
+	background-image: url("../images/slide-1.jpg");
+	background-size: cover;
+    background-position: center;
+    background-attachment: fixed !important;
+*/
+}
+
+#slider-text {
+	position: absolute;
+	z-index: 2000;
+	color: white;
+	font-size: 5vmax;
+	bottom: 40%;
+	font-family: 'Abril Fatface', cursive;
+	letter-spacing: 9px;
+	opacity: .9;
+}
+
+#logo-png {
+	position: fixed;
+	z-index: 3000;
+	width: 100%;
+	left: 5%;
+	top: 5%;
+}
+
+#logo-png a img{
+	position: absolute;
+	z-index: 3000;
+	width: 10%;
+}
+
+#menu .row {
+	position: fixed;
+	z-index: 5000;
+	top: 4vh;
+	width: 70%;
+	left: 15%;
+}
+
+#menu ul li a{
+	color: white;
+	font-size: 1.2vh;
+}
+
+#menu ul li a:hover{
+	transform: scale(1.1)
+}
+
+#menu a.active {
+	border-bottom: 1px solid white;
+}
+
+
+#home-button {
+	bottom: 30%;
+	position: absolute;
+	width: 20%;
+	opacity: 0.8;
+	z-index: 99;
+	font-size: 1.5vmax;
+	padding-left: 0;
+	padding-right: 0;
+	font-weight: 800;
+}
+
+@media screen and (max-aspect-ratio: 1/2) {
+  #home-button {
+    width: 45%;
+	bottom: 30%;
+  }
+}
+
+@media screen and (min-aspect-ratio: 15/9) {
+  #home-button {
+    width: 20%;
+	bottom: 15%;
+  }
+}
+
+#home-button:hover {
+	color: #000;
+	transform: scale(1.1);
+}
+
+	/*IMPORTED-SLIDESHOW CSS*/
+	.slideshow {
+	  list-style-type: none;
+	}
+
+	.slideshow,
+	.slideshow:after { 
+		top: -16px;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		left: 0px;
+		z-index: 0; 
+	}
+
+	.slideshow li span { 
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+		color: transparent;
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-attachment: fixed !important;
+		opacity: 0;
+		z-index: 0;
+		animation: imageAnimation 30s linear infinite 0s; 
+	}
+
+
+
+	.slideshow li:nth-child(1) span { 
+		background-image: url("../images/slide-1.jpg"); 
+	}
+	.slideshow li:nth-child(2) span { 
+		background-image: url("../images/slide-2.jpg"); 
+		animation-delay: 6s; 
+	}
+	.slideshow li:nth-child(3) span { 
+		background-image: url("../images/slide-3.jpg"); 
+		animation-delay: 12s; 
+	}
+	.slideshow li:nth-child(4) span { 
+		background-image: url("../images/slide-4.jpg"); 
+		animation-delay: 18s; 
+	}
+	.slideshow li:nth-child(5) span { 
+		background-image: url("../images/slide-5.jpg"); 
+		animation-delay: 24s; 
+	}
+
+
+
+	@keyframes imageAnimation { 
+		0% { opacity: 0; animation-timing-function: ease-in; }
+		8% { opacity: 1; animation-timing-function: ease-out; }
+		17% { opacity: 1 }
+		25% { opacity: 0 }
+		100% { opacity: 0 }
+	}
+
+
+	@keyframes titleAnimation { 
+		0% { opacity: 0 }
+		8% { opacity: 1 }
+		17% { opacity: 1 }
+		19% { opacity: 0 }
+		100% { opacity: 0 }
+	}
+
+
+	.no-cssanimations .cb-slideshow li span {
+		opacity: 1;
+	}
+
+
+
+
+/*2.2-About*/
+#about {
+	margin-top: 5vh;
+	margin-bottom: 15vh;
+}
+
+/*2.3-Parallax 1*/
+#parallax-1 {
+	width: 100%;
+    height: 60vh;
+    position: relative;
+    background-image: url("../images/parallax-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 15vh;
+	margin-bottom: 15vh;
+}
+
+#parallax-text-1 {
+	z-index: 4000;
+	font-size: 4vh;
+	position: absolute;
+}
+
+#parallax-text-bg {
+	width: 100%;
+	height: 10vh;
+	background: white;
+	opacity: 0.6;
+	position: absolute;
+}
+
+/*2.4-Skills*/
+#skills {
+	margin-top: 15vh;
+	margin-bottom: 15vh;
+}
+/*2.5-Services*/
+#services {
+	margin-top: 20vh;
+	position: relative;
+}
+
+#services .title-text {
+	margin-top: 20vh;
+}
+
+#services .services-item {
+	margin-top: 10vh;
+}
+
+/*2.6-Projects*/
+#projects {
+	margin-top: 20vh;
+}
+
+.project-slide {
+	height: 80vh;
+	width: 80%;
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	margin-top: 2vh;
+}
+
+#project-carousel {
+	position: relative;
+}
+
+#project-carousel h1 {
+	position: absolute;
+	top: 78%;
+	left: 15%;
+	z-index: 5001;
+	color: #873A2E;
+}
+
+#project-carousel h2 {
+	position: absolute;
+	top: 70%;
+	left: 15%;
+	font-size: 2vh;
+	font-family: 'Poppins', sans-serif;
+	z-index: 5001;
+}
+
+#project-carousel button {
+	position: absolute;
+	top: 77%;
+	left: 77%;
+	padding-left: 2vh;
+	padding-right: 2vh;
+	z-index: 5001;
+}
+
+#project-carousel button:hover {
+	transform: scale(1.1);
+}
+
+#project-carousel button a {
+	color: white;
+}
+
+.project-slide-textbg {
+	background: white;
+	width: 80%;
+	height: 12%;
+	z-index: 5000;
+	position: absolute;
+	bottom: 15%;
+	opacity: 0.5;
+}
+
+
+/*2.7-Contact*/
+#contact {
+	margin-top: 20vh;
+}
+#contact i {
+	font-size: 5vh;
+}
+
+#contact p {
+	font-size: 1.5vh;
+}
+
+#contact a {
+	font-size: 1.5vh;
+}
+
+#contact h5 {
+	font-size: 2vh;
+	font-family: 'Abril Fatface', cursive;
+}
+
+/*3-FOOTER*/
+#footer {
+	height: 20vh;
+}
+
+#footer span {
+	font-size: 1.5vh;
+}
+
+
+
+
+
+
+
+
